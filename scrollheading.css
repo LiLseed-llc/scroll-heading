@@ -1,0 +1,64 @@
+/* Box to the Top */
+.scrollheading-target {
+position: relative;
+}
+
+.scrollheading-box {
+background-color: #fdfdfd;
+color: #fff;
+padding: 10px;
+text-align: center;
+}
+
+.scrollheading-box a {
+display: inline-block;
+margin-right: 10px;
+border-right: 1px solid #ccc;
+padding-right: 10px;
+}
+
+.scrollheading-box a:last-child {
+border-right: none;
+padding-right: 0;
+margin-bottom: 0;
+}
+
+.scrollheading-fixed {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 9999;
+}
+
+.scrollheading-fixed.active {
+background-color: #fff;
+color: #000;
+}
+
+@media screen and (max-width: 768px) {
+.scrollheading-fixed {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+}
+}
+
+/* 以下は、追加したCSS /
+/ BOXが画面上部に固定される /
+.scrollheading-fixed.active {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+}
+/ BOXの設置した位置を超えたらBOXが画面上部固定に切り替わるように */
+@media screen and (max-width: 768px) {
+.scrollheading-fixed.active {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+}
+}?
