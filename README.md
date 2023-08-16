@@ -1,4 +1,4 @@
-This is a WordPress plugin made using chatGPT.
+This is a WordPress plugin made using ChatGPT.
 The shortcode displays the top three headings (H2) in order, side by side
 Scrolling past the installed headings, the headings are fixed at the top of the screen.
 It is created with Vanilla JS.
